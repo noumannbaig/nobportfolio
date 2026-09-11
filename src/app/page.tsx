@@ -274,7 +274,7 @@ export default function Home() {
           <div className="hero-bottom">
             <p>
               Software engineer building resilient cloud platforms, intelligent
-              products, and high-performance APIs from Lahore to the world.
+              products, and high-performance APIs for ambitious teams.
             </p>
             <div className="hero-actions">
               <a href="#work" className="button button-primary">
