@@ -106,6 +106,23 @@ const projects = [
     ],
     accent: "green",
   },
+  {
+    index: "09",
+    title: "Argus",
+    type: "AWS RAG Observatory",
+    description:
+      "A production-style RAG observatory that instruments the full retrieval path — query expansion, hybrid search, fusion, cited generation, and claim-level faithfulness — mapped to Amazon Bedrock Knowledge Bases.",
+    impact: "See what the model saw",
+    tech: [
+      "Python",
+      "FastAPI",
+      "Amazon Bedrock",
+      "Hybrid Retrieval",
+      "RAG Evaluation",
+    ],
+    accent: "gold",
+    github: "https://github.com/noumannbaig/Rag-pipeline-argus",
+  },
 ];
 
 const skillGroups = [

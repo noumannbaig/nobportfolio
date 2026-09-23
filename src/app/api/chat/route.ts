@@ -33,6 +33,9 @@ Selected work:
   high-throughput symbol calculations.
 - Business Data Pipeline: multi-source consumer data ingestion using Redshift,
   Athena, Glue, ClickHouse, PostgreSQL, and Neon.
+- Argus: AWS RAG observatory with hybrid retrieval, query expansion, cited
+  generation, and claim-level faithfulness audit, mapped to Amazon Bedrock
+  Knowledge Bases. GitHub: https://github.com/noumannbaig/Rag-pipeline-argus.
 
 Proof points: 99.9% uptime, $500K+ monthly payments handled, and a 5.0/5 client
 rating. Client names are intentionally private.
@@ -81,12 +84,16 @@ function fallbackReply(question: string) {
     return "You can reach Nouman at nomanbaig290@gmail.com, or send this conversation through the contact form below so he has the full context.";
   }
 
+  if (/argus|rag|bedrock|faithfulness|hybrid retrieval/.test(text)) {
+    return "Argus is a retrieval observatory, not a chatbot clone. It instruments query expansion, BM25 plus dense hybrid search, reciprocal rank fusion, cited generation, and a claim-level faithfulness audit. The pattern maps to Amazon Bedrock Knowledge Bases. The repository is linked in the projects section.";
+  }
+
   if (/fastscanner|scanner|polygon|parquet|market data/.test(text)) {
     return "FastScanner is a high-throughput market-data system. It pulls millions of ticker records from Polygon, stores them as Parquet files, and processes symbols through calculation pipelines. Its repository is linked in the projects section.";
   }
 
   if (/project|portfolio|built|work/.test(text)) {
-    return "Nouman has delivered enterprise tax systems, carbon accounting, digital signage, HR automation, industrial gamification, railway technology, market-data processing, and consumer-data pipelines. The projects section includes technical details and available GitHub links.";
+    return "Nouman has delivered enterprise tax systems, carbon accounting, digital signage, HR automation, industrial gamification, railway technology, market-data processing, consumer-data pipelines, and Argus, a production-style AWS RAG observatory. The projects section includes technical details and available GitHub links.";
   }
 
   if (/ai|llm|agent|langchain|rag|fastapi|python/.test(text)) {

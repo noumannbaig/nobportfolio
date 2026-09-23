@@ -325,6 +325,7 @@ em {
 .accent-blue { --accent: #7bb8ff; }
 .accent-red { --accent: #ff7c71; }
 .accent-green { --accent: #79dda4; }
+.accent-gold { --accent: #e8c15a; }
 
 .project-top {
   position: relative;
